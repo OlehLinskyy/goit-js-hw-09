@@ -24,8 +24,8 @@ function onFormSubmit(evt) {
         Notiflix.Notify.failure(error);
         console.log(error);
       });
-  };  
-};
+  }
+}
 
 function createPromise(position, delay) {
   return new Promise((resolve, reject) => {
@@ -38,4 +38,4 @@ function createPromise(position, delay) {
       }
     }, delay);
   });
-};
+}
