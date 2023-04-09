@@ -9,6 +9,7 @@ const hoursEl = document.querySelector('span[data-hours]');
 const minutesEl = document.querySelector('span[data-minutes]');
 const secondsEl = document.querySelector('span[data-seconds]');
 
+let dateInFuture;
 let timerId = null;
 let timer;
 

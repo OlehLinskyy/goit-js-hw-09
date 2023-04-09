@@ -2,10 +2,10 @@ const buttonStartEl = document.querySelector('button[data-start]');
 const buttonStopEl = document.querySelector('button[data-stop]');
 const bodyEl = document.querySelector('body');
 
+let timerId;
+
 buttonStartEl.addEventListener('click', clickOnStart);
 buttonStopEl.addEventListener('click', clickOnStop);
-
-let timerId;
 
 function clickOnStart() {
   timerId = setInterval(() => {
