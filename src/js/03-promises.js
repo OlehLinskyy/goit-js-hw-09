@@ -1,6 +1,7 @@
 import Notiflix from 'notiflix';
 
 const formEl = document.querySelector('form');
+const buttonStartEl = formEl.querySelector('button')
 const inputDelayEl = formEl.delay;
 const inputStepEl = formEl.step;
 const inputAmountEl = formEl.amount;
@@ -9,7 +10,8 @@ formEl.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(evt) {
   evt.preventDefault();
-
+  buttonStartEl.disabled = true;
+  
   const delay = Number(inputDelayEl.value);
   const step = Number(inputStepEl.value);
   const amount = Number(inputAmountEl.value);
